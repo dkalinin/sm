@@ -1,0 +1,28 @@
+{
+  "name": "filehub-js",
+  "version": "1.0.0",
+  "description": "Web part of Filehub.",
+  "main": "app/index.js",
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "author": "Artem Okladov",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.1.2",
+    "jsdom": "^20.0.1",
+    "toastedjs": "0.0.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.18.10",
+    "eslint": "^7.16.0",
+    "eslint-config-google": "^0.14.0",
+    "ts-jest": "^29.0.3"
+  }
+}
