@@ -1,5 +1,4 @@
 import { BaseAction } from '../base-action/base-action.js';
-import { ACTION_NAME, MUTATOR_NAME, PLAYING_STATUS } from '../../constants';
 
 export class PlayAction extends BaseAction {
     #requestService;
@@ -8,8 +7,6 @@ export class PlayAction extends BaseAction {
         super();
 
         this.#requestService = requestService;
-
-        this._title = ACTION_NAME.PLAY;
         this._payload = payload;
     }
 
