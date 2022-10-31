@@ -2,7 +2,7 @@ import { MUTATOR_NAME } from '../constants';
 
 export const mutators = {
     [MUTATOR_NAME.SET_IS_LOADING]: (state, isLoading) => {
-        state.isLoading = isLoading;
+        return {...state, isLoading};
     },
     [MUTATOR_NAME.SET_TRACK]: (state, track) => {
         state.track = track;
